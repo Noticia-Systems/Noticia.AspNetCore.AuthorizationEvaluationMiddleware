@@ -38,16 +38,17 @@ public class AuthorizationEvaluationMiddleware
     /// <param name="context"><see cref="HttpContext"/> for this request.</param>
     public async Task InvokeAsync(HttpContext context)
     {
-        var isAuthorizationEvaluationRequest = context.Request.Headers.ContainsKey("Authorization-Evaluation") && bool.Parse(context.Request.Headers["Authorization-Evaluation"]);
-
-        if (isAuthorizationEvaluationRequest)
+        if (context.Request.Headers.ContainsKey("Authorization-Evaluation"))
         {
-            // OPA package would 403 if not granted, we just prevent the request from executing.
-            context.Response.StatusCode = StatusCodes.Status204NoContent;
+            if (bool.TryParse(context.Request.Headers["Authorization-Evaluation"], out bool isAuthorizationEvaluationRequest) && isAuthorizationEvaluationRequest || context.Request.Headers["Authorization-Evaluation"] == "1")
+            {
+                // OPA package would 403 if not granted, we just prevent the request from executing.
+                context.Response.StatusCode = StatusCodes.Status204NoContent;
 
-            return;
+                return;
+            }
         }
-            
+        
         await this.next(context);
     }
 
