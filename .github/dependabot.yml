@@ -1,6 +1,13 @@
 version: 2
 updates:
-  — package-ecosystem: "nuget"
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "nuget"
     directory: "/"
     schedule:
       interval: "daily"
