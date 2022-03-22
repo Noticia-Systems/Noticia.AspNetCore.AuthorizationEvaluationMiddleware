@@ -25,3 +25,4 @@ jobs:
           PROJECT_FILE_PATH: src/Noticia.AspNetCore.AuthorizationEvaluationMiddleware/Noticia.AspNetCore.AuthorizationEvaluationMiddleware.csproj
           PACKAGE_NAME: Noticia.AspNetCore.AuthorizationEvaluationMiddleware
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          VERSION_REGEX: ^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$
