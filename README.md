@@ -8,6 +8,12 @@ Providing this header allows for a policy agent (like OpenPolicyAgent) to evalua
 
 This workflow is useful when using client apps (i.e. SPAs like Angular) and you need to check whether the user has certain permissions to access resources within the client app, but without having to allow public access to the policy agent.
 
+## Installation
+
+```
+dotnet add package Noticia.AspNetCore.AuthorizationEvaluationMiddleware
+```
+
 ## Usage
 
 ```csharp
