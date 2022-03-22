@@ -1,4 +1,4 @@
-[![.NET](https://github.com/Noticia-Systems/Noticia.AspNetCore.AuthorizationEvaluationMiddleware/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Noticia-Systems/Noticia.AspNetCore.AuthorizationEvaluationMiddleware/actions/workflows/dotnet.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Nuget](https://img.shields.io/nuget/v/Noticia.AspNetCore.AuthorizationEvaluationMiddleware) [![.NET](https://github.com/Noticia-Systems/Noticia.AspNetCore.AuthorizationEvaluationMiddleware/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Noticia-Systems/Noticia.AspNetCore.AuthorizationEvaluationMiddleware/actions/workflows/dotnet.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # Noticia.AspNetCore.AuthorizationEvaluationMiddleware
 
