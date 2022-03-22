@@ -4,7 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>1.0.2</PackageVersion>
+        <PackageVersion>1.0.4</PackageVersion>
         <Title>Noticia.AspNetCore.AuthorizationEvaluationMiddleware</Title>
         <Authors>Noticia Systems</Authors>
         <Description>This middleware provides the option to not execute requests whenever the Authorization-Evaluation header of a HTTP request is set to a truthy value.</Description>
